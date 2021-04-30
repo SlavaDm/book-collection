@@ -1,0 +1,86 @@
+.box {
+	display: flex;
+	flex-direction: column;
+}
+.form {
+	width: 30%;
+	min-width: 250px;
+	font-size: 16px;
+	margin: 0 auto;
+
+	.border {
+		border-radius: 10px;
+		border: 2px solid rgba(0, 0, 0, 0.2);
+		padding: 20px;
+
+		.button {
+			display: flex;
+			justify-content: center;
+
+			button {
+				background-color: rgba(212, 216, 212, 0.2);
+				padding: 3px;
+				border-radius: 3px;
+				box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1), 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+
+				&:focus {
+					background-color: rgba(212, 216, 212, 0.8);
+					outline: 2px dashed black;
+				}
+			}
+		}
+	}
+	.item {
+		margin: 10px auto;
+
+		input {
+			border-radius: 3px;
+			background: #faf7f7;
+			max-width: 500px;
+			width: 100%;
+			padding: 8px 10px;
+			font-size: 14px;
+			box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1), 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+
+			&:focus {
+				background-color: rgba(212, 216, 212, 0.8);
+				outline: 2px dashed black;
+			}
+		}
+	}
+
+	&__label {
+		margin: 0 5px 0 0;
+	}
+
+	&__error {
+		text-align: center;
+		margin: 20px 0 0 0;
+		font-size: 16px;
+		color: red;
+	}
+
+	&__success {
+		text-align: center;
+		margin: 20px 0 0 0;
+		font-size: 16px;
+		color: rgb(12, 214, 12);
+	}
+	.info {
+		text-align: center;
+		margin: 20px 0 0 0;
+		font-size: 14px;
+		color: rgba(0, 0, 0, 0.6);
+
+		a {
+			font-size: 16px;
+			color: black;
+			padding: 2px;
+			margin: 0 0 0 3px;
+
+			&:focus {
+				outline: 2px dashed black;
+			}
+		}
+	}
+}
